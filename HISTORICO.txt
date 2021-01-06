@@ -1,2 +1,4 @@
 npm install bootstrap
 npm install -S vue-sweetalert2
+npm install axios
+npm install --save nprogress

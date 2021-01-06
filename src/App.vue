@@ -9,11 +9,6 @@
         <li class="nav-item">
           <router-link class="nav-link" to="/list-employees">List</router-link>
         </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/edit-employee/:id"
-            >Edit</router-link
-          >
-        </li>
       </ul>
     </nav>
     <div class="container mt-5">
