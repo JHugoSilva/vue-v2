@@ -122,7 +122,7 @@
           </div>
           <!--FIM DO BLOCO: Registration-->
           <div class="form-group">
-            <button type="submit" class="btn btn-primary">
+            <button @click="submitNewEmployee" class="btn btn-primary">
               <font-awesome-icon :icon="['fas', 'user-plus']" /> Employee
             </button>
           </div>
@@ -132,41 +132,5 @@
   </div>
 </template>
 
-<script>
-import { required } from "vuelidate/lib/validators";
-
-export default {
-  name: "Create Employee",
-  data() {
-    return {
-      employeeForm: {
-        name: "",
-        job_role: "",
-        salary: "",
-        birth: "",
-        employee_registration: "",
-      },
-      isSubmitted: false,
-    };
-  },
-  validations: {
-    employeeForm: {
-      name: { required },
-      job_role: { required },
-      salary: { required },
-      birth: { required },
-      employee_registration: { required },
-    },
-  },
-  methods: {
-    handleSubmitForm() {
-      this.isSubmitted = true;
-
-      this.$v.$touch();
-      if (this.$v.$invalid) {
-        return;
-      }
-    },
-  },
-};
+<script src="./CreateEmployee.js">
 </script>

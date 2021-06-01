@@ -11,7 +11,7 @@ const routes = [
     component: () => import('../components/pages/create-employee/CreateEmployeeComponent'),
   },
   {
-    path: '/list-employees',
+    path: '/list',
     name: 'List Employee',
     component: () => import('../components/pages/list-employee/ListEmployeeComponent'),
   },

@@ -7,7 +7,7 @@ import router from './router';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../node_modules/nprogress/nprogress.css';
-import './assets/icons.js';
+import './assets/icons';
 
 Vue.config.productionTip = false;
 Vue.use(VueSweetAlert);
